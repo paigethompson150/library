@@ -20,10 +20,10 @@
     </div>
     <nav>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Donate</li>
-        <li>Authors</li>
+        <li class="hover-underline-animation">Home</li>
+        <li class="hover-underline-animation">About</li>
+        <li class="hover-underline-animation">Donate</li>
+        <li class="hover-underline-animation">Authors</li>
         <li>
           <svg style="width:24px;height:24px" viewBox="0 0 24 24">
           <path fill="currentColor" d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21" /> </svg>
@@ -46,16 +46,16 @@
   </div>
 
   <div class="form-popup" id="myForm">
-    <form action="/script.js" class="form-container">
+    <form action="#" method="gets" class="form-container">
       <h1>New Book</h1>
       <label for="bookName">Book Name</label>
-      <input type="text" id="bookName" placeholder="Enter Book Name" name="bookName" required>
+      <input type="text" id="bookName" placeholder="Enter Book Name" name="bookName" required/>
 
       <label for="author"></label>
-      <input type="text" id="author" placeholder="Enter Author" name="author" required>
+      <input type="text" id="author" placeholder="Enter Author" name="author" required/>
 
       <label for="year"></label>
-      <input type="text" id="year" placeholder="Year Published" name="year" required>
+      <input type="text" id="year" placeholder="Year Published" name="year" required/>
 
       <button type="submit" id="submit" class="btn">Add Book</button>
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
