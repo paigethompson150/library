@@ -124,8 +124,8 @@ header li {
 .form-popup {
   display: none;
   position: fixed;
-  left: 50%;
-  top: 60%;
+  left: 40%;
+  top: 450px;
   transform: translate(-50%, -50%);
   border: 3px solid #f1f1f1;
   z-index: 9;
@@ -177,8 +177,36 @@ header li {
 
 /*end of pop-up form */
 
+/*pop-up animation styles */
+.form-popup{
+  top: -400px;
+  transform-origin: 10px 10px;
+  animation: drop 0.5s ease forwards;
+}
 
+@keyframes drop{
+  0%{opacity: 0}
+  70%{ transform: translateY(600px)}
+  100%{ transform: translateY(550px); opacity: 1;}
+}
+/*end of animation styles for pop-up*/
 
+/*bookItem animation*/
+.bookItem{
+  -webkit-animation: fadeInUp 500ms ease-in-out;
+  animation: fadeInUp 500ms ease-in-out;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateY(40px);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+  }
+}
 
 
 
