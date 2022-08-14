@@ -1,0 +1,28 @@
+html{
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Varela Round', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+header nav {
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+header li {
+  display: inline;
+  padding-right: 10px;
+}
