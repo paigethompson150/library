@@ -49,15 +49,15 @@
     <form action="/script.js" class="form-container">
       <h1>New Book</h1>
       <label for="bookName">Book Name</label>
-      <input type="text" placeholder="Enter Book Name" name="bookName" required>
+      <input type="text" id="bookName" placeholder="Enter Book Name" name="bookName" required>
 
       <label for="author"></label>
-      <input type="text" placeholder="Enter Author" name="author" required>
+      <input type="text" id="author" placeholder="Enter Author" name="author" required>
 
-      <label for="read"></label>
-      <input type="text" placeholder="Yes or no" name="read">
+      <label for="year"></label>
+      <input type="text" id="year" placeholder="Year Published" name="year">
 
-      <button type="submit" class="btn">Add Book</button>
+      <button type="submit" id="submit" class="btn">Add Book</button>
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
   </div>
