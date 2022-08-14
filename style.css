@@ -52,13 +52,6 @@ header li {
   font-weight: 600;
 }
 
-.bookContainer{
-  background-color: rgb(243, 213, 201);
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
-
 /* button styling */
 /* CSS */
 .button-53 {
@@ -170,3 +163,19 @@ header li {
 
 
 /*end of pop-up form */
+
+/* grid and styling of books */
+
+#bookContainer{
+  margin-top: 50px;
+  width: 100vw;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.bookItem{
+  text-align: center;
+  height: 250px;
+  background-color: rgb(243, 213, 201);
+}
