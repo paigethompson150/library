@@ -72,26 +72,50 @@ header li {
   padding: 10px;
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .bookItem{
   padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
   position: relative;
   text-align: center;
   height: 250px;
   background-color: var(--book-item-color);
+  border-radius: 15px;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.bookItem h2{
+  padding-top: 30px;
+}
+
+.bookItem svg{
+  float: left;
 }
 
 .switch{
   position: absolute;
+  float: right;
+}
 
+.active{
+  background-color: red;
 }
 
 .hidden{
   color: var(--book-item-color);
 }
 
+.read{
+  background-color: black;
+  color: white;
+}
+
+.read svg{
+  background-color: white;
+}
 
 
 
