@@ -8,7 +8,8 @@ let myLibrary = [
 
 //for now, display the existing library.
 
-function Book(title, author, year){
+function Book(id, title, author, year){
+  this.id = id;
   this.title = title;
   this.author = author;
   this.year = year;
@@ -19,12 +20,25 @@ Book.prototype.display = function(){
   let bookTitle = document.createElement('h3');
   let bookAuthor = document.createElement('h4');
   let bookYear = document.createElement('h4');
+  let bookId = document.createElement('span');
+  /*button creation */
+  let bookButton = document.createElement('label')
+  bookButton.className = 'switch';
+  let buttonCheckBox = document.createElement('input');
+  buttonCheckBox.type = 'checkbox';
+  let buttonSlider = document.createElement('span');
+  buttonSlider.className = 'slider';
+  buttonSlider.classList.add('round');
+
+  bookButton.append(buttonCheckBox, buttonSlider);
 
   bookTitle.textContent = this.title;
   bookAuthor.textContent = this.author; 
   bookYear.textContent = this.year; 
+  bookId.textContent = this.id;
+  bookId.className = 'hidden';
 
-  bookBox.append(bookTitle, bookAuthor, bookYear);
+  bookBox.append(bookButton, bookTitle, bookAuthor, bookYear, bookId);
   bookBox.className = 'bookItem';
   const element = document.getElementById("bookContainer");
   element.prepend(bookBox);
@@ -33,10 +47,11 @@ Book.prototype.display = function(){
 const addBook = (ev)=>{
   ev.preventDefault(); //stop form from submitting
 
+  const id = Date.now();
   const book = document.getElementById('bookName').value; 
   const author = document.getElementById('author').value; 
   const year = document.getElementById('year').value; 
-  const entry = new Book(book, author, year);
+  const entry = new Book(id, book, author, year);
   /*let book = {
     id: Date.now(),
     title: document.getElementById('bookName').value,
