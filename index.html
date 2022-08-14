@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
   <title>Library</title>
 </head>
 <body>
@@ -40,8 +41,25 @@
     <img class="nathanImage" src="assets/nathan.jpeg">
     <div class="imageText">
       <h3>It's time to read.</h3>
-      <button class="button-53" role="button">Add a New Book</button>
+      <button class="button-53" onclick="openForm()" role="button">Add a New Book</button>
     </div>
+  </div>
+
+  <div class="form-popup" id="myForm">
+    <form action="/script.js" class="form-container">
+      <h1>New Book</h1>
+      <label for="bookName">Book Name</label>
+      <input type="text" placeholder="Enter Book Name" name="bookName" required>
+
+      <label for="author"></label>
+      <input type="text" placeholder="Enter Author" name="author" required>
+
+      <label for="read"></label>
+      <input type="text" placeholder="Yes or no" name="read">
+
+      <button type="submit" class="btn">Add Book</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
   </div>
 
   <div class="bookContainer">
