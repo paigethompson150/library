@@ -10,4 +10,4 @@ Some practice using a form to capture user data, and then capturing that user da
 - Click on the button on your new book to change its color, or the trash can to delete it!
 
 ### Walkthrough 
-![](https://i.imgur.com/ayeHsgw.mp4)
+![](https://i.imgur.com/9akAsae.gif)
