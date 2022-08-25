@@ -41,7 +41,7 @@
     <img class="nathanImage" src="assets/nathan.jpeg">
     <div class="imageText">
       <h3>It's time to read.</h3>
-      <button class="button-53" onclick="openForm()" role="button">Add a New Book</button>
+      <button class="button-53" type="button" onclick="openForm()" role="button">Add a New Book</button>
     </div>
   </div>
 
@@ -49,15 +49,15 @@
     <form action="#" method="gets" class="form-container">
       <h1>New Book</h1>
       <label for="bookName">Book Name</label>
-      <input type="text" id="bookName" placeholder="Enter Book Name" name="bookName" required/>
+      <input type="text" id="bookName" placeholder="Enter Book Name" name="bookName" required />
 
       <label for="author"></label>
-      <input type="text" id="author" placeholder="Enter Author" name="author" required/>
+      <input type="text" id="author" placeholder="Enter Author" name="author" required />
 
       <label for="year"></label>
-      <input type="text" id="year" placeholder="Year Published" name="year" required/>
+      <input type="text" id="year" placeholder="Year Published" name="year" required />
 
-      <button type="submit" id="submit" class="btn">Add Book</button>
+      <button type="submit" id="submit" class="btn" onclick ="addBook()">Add Book</button>
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
   </div>
